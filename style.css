@@ -1,0 +1,27 @@
+*{
+	background-color: rgb(125, 235, 256);
+	font-family: Arial;
+}
+
+
+#title{
+	text-align: center;
+	color: blue;	
+}
+
+#button{
+	border-radius: 0.5rem;
+	background-color: white;
+	font-color: black;
+	font-style: italic;
+}
+
+/*
+.active{
+	color: red;
+}
+
+.green{
+	background-color: green;
+}
+*/
