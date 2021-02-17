@@ -19,5 +19,7 @@ document.addEventListener('keydown', function(event){ //Evento para buscar um va
 
     if(isEscKey){ //Atribuindo o valor 'invisible' ao presionar 'ESC'
         modalWrapper.classList.add('invisible')
+    }else{   //alert para 
+        alert('Você digitou algo errado!!')
     }
 })
