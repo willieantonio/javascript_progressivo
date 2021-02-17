@@ -173,7 +173,7 @@ body.insertBefore(div, header.nextSibling) //para se adicionar o elemento
 
 */
 
-
+/*
 //Eventos
 //Adicionando eventos via HTML
 //Eventos onclick
@@ -198,6 +198,25 @@ h1.addEventListener('click', print) //Seleciona o nome do evento e a função ch
 function print(){
 	console.log('print')
 }
-
+*/
 
 //Adiconar Eventos via JS (Outro metodo)
+
+const h1 = document.querySelector('h1');
+
+h1.addEventListener('click', print) //Evento para adicionar mais de uma ação ao elemento.
+
+function print(){   //Primeira ação ao clicar
+	console.log('print')
+}
+
+h1.addEventListener('click', function(){ //Segunda ação
+	console.log('Agora estamos em outro momento')
+})
+
+//Aguemnto event
+const input = document.querySelector('input')
+
+input.onkeydown = function(event){ //Com o argumento event consegue se pegar os valos dos elementos
+	console.log(event.currentTarget)
+}
